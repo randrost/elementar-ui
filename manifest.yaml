@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - name: elementar-rt
-          image: registry.r-tulika.me/elementar-rt:latest
+          image: registry.tulikas.de/elementar-rt:latest
           ports:
             - containerPort: 4000
       imagePullSecrets:
@@ -57,10 +57,10 @@ spec:
   ingressClassName: nginx
   tls:
     - hosts:
-        - elementar-rt.r-tulika.me
+        - elementar-rt.tulikas.de
       secretName: elementar-rt-tls
   rules:
-    - host: elementar-rt.r-tulika.me
+    - host: elementar-rt.tulikas.de
       http:
         paths:
           - path: /

@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "registry.r-tulika.me"
+        REGISTRY = "registry.tulikas.de"
         IMAGE_NAME = "elementar-rt"
         DOCKER_CREDENTIALS_ID = "docker-registry-credentials"
     }
